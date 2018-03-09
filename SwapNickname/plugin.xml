@@ -1,0 +1,28 @@
+<plugin
+		id="com.vp.plugin.sample.swapnickname"
+		name="Swap Nickname"
+    description="Swap Nickname"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.swapnickname.SwapNicknamePlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.swapnickname.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.swapnickname.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.swapnickname.actionset1.SwapNicknameActionControl"
+					actionType="generalAction"
+		      description="Swap Nickname"
+					style="normal"
+          tooltip="Swap Nickname"
+          icon="icons/swap.png"
+					toolbarPath="com.vp.plugin.sample.swapnickname.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.swapnickname.actions.SwapNicknameActionControl"/>
+			</action>
+			
+		</actionSet>
+	</actionSets>	
+</plugin>
